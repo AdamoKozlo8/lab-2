@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{
+    float amountPLN, rate, amountUSD;
+    rate = 0.27f;
+    
+    printf("Podaj kwote w złotówkach: ");
+    scanf("%f", &amountPLN);
+    
+    amountUSD = amountPLN * rate;
+    printf("Kwota w USD: %f", amountUSD);
+
+    return 0;
+}
