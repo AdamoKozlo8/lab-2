@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    float purchaseNet, marginPercent, sellingPrice;
+    
+    printf("Podaj kwote zakupu");
+    scanf("%f", &purchaseNet);
+    
+    printf("Podaj marżę w procentach: ");
+    scanf("%f", &marginPercent);
+    
+    sellingPrice = purchaseNet*(1+marginPercent/100);
+    printf("Kwota sprzedaży %f", sellingPrice);
+
+    return 0;
+}
